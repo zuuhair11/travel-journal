@@ -1,13 +1,115 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    box-sizing: border-box;
+    /* margin: 0; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+
+/*===============================
+    Navbar
+================================= */
+.nav {
+    color: #FFFFFF;
+    padding: 20px 0;
+    background: #F55A5A;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 40px;
+}
+
+.nav p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.nav .fa-solid {
+    padding: 0 10px;
+
+}
+
+
+/*===============================
+    Cards
+================================= */
+.cards {
+    padding: 0 40px;
+
+}
+
+.card--container {
+    margin-top: 24px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card--info {
+    width: 70%;
+}
+
+.location,
+.view--on--map {
+    font-weight: 400;
+    font-size: 10.24px;
+    line-height: 12px;
+}
+
+.location {
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+    margin-right: 5px;
+}
+
+.view--on--map {
+    color: #918E9B;
+}
+
+
+.title,
+.startDate,
+.description {
+    color: #2B283A;
+}
+.title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+.startDate {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10.24px;
+    line-height: 12px;
+    letter-spacing: 1px;
+}
+
+.description {
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10.24px;
+    line-height: 15px;
+}
+
+.card--container {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #F5F5F5;
 }
